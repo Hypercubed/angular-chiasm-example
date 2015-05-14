@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="scripts/chiasm-ks/axes.css">
+
+<style>
+
+/* Make the container fill the page. */
+#container {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 500px;
+}
+</style>
+
+<select class="form-control" ng-model="main.configName" ng-options="item.name as item.label for item in main.data" ng-change="main.getConfig(main.configName)"></select>
+
+<!-- The container for the runtime environment. -->
+<div id="container"></div>
