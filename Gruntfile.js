@@ -341,9 +341,12 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
+            'config.js',
+            'scripts/{,*/}*.*',  // temp solution
+            'styles/{,*/}*.*',  // temp solution
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
-            'styles/fonts/{,*/}*.*'
+            //'styles/fonts/{,*/}*.*'
           ]
         }, {
           expand: true,
@@ -352,8 +355,8 @@ module.exports = function (grunt) {
           src: ['generated/*']
         }, {
           expand: true,
-          cwd: 'bower_components/bootstrap/dist',
-          src: 'fonts/*',
+          cwd: '.',
+          src: 'bower_components/**/*.{js,css,map}',    // temp solution
           dest: '<%= yeoman.dist %>'
         }]
       },
@@ -395,9 +398,15 @@ module.exports = function (grunt) {
           transitive: true
         }
       }
+    },
+
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: ['**']
     }
   });
-
 
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
     if (target === 'dist') {
@@ -431,18 +440,18 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
-    'useminPrepare',
+    //'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
-    'concat',
-    'ngAnnotate',
+    //'concat',
+    //'ngAnnotate',
     'copy:dist',
-    'cdnify',
-    'cssmin',
-    'uglify',
-    'filerev',
-    'usemin',
-    'htmlmin'
+    //'cdnify',
+    //'cssmin',
+    //'uglify',
+    //'filerev',
+    //'usemin',
+    //'htmlmin'
   ]);
 
   grunt.registerTask('default', [

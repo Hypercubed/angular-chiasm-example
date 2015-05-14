@@ -31,7 +31,6 @@ define(['angular','chiasm','d3'], function(angular, Chiasm) {
 
       main.getConfig = function getConfig(config) {
         $http.get(path+config+'.json').then(function(response) {
-          console.log(response.data);
           chiasm.config = response.data;
         });
       };
