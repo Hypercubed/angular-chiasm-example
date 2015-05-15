@@ -4,3 +4,4 @@ dist
 .sass-cache
 .grunt
 bower_components
+app/jspm_packages

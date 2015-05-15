@@ -1,6 +1,18 @@
 'use strict';
 
-require(['angular','scripts/controllers/main','angular-route'], function(angular,main) {
+/* require(['angular','scripts/controllers/main','angular-route'], function(angular,main) { */
+
+  import angular from 'angular';
+  import main from 'scripts/controllers/main';
+
+  import 'bootstrap';
+  import 'bootstrap/css/bootstrap.css!';
+
+  import 'styles/main.css!';
+
+  import 'angular-route';
+
+  //console.log(main);
 
   angular
     .module('angularChiasmApp', [
@@ -30,5 +42,6 @@ require(['angular','scripts/controllers/main','angular-route'], function(angular
 
   //require('controllers/main.js');
 
-  angular.bootstrap(document.documentElement, ["angularChiasmApp"]);
-});
+  angular.bootstrap(document.documentElement, ['angularChiasmApp']);
+
+//});

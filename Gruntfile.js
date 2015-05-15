@@ -391,14 +391,14 @@ module.exports = function (grunt) {
       }
     },
 
-    bowerRequirejs: {
+    /* bowerRequirejs: {
       target: {
         rjsConfig: 'app/config.js',
         options: {
           transitive: true
         }
       }
-    },
+    }, */
 
     'gh-pages': {
       options: {
