@@ -7,7 +7,7 @@
   import angular from 'angular';
   import Chiasm from 'chiasm';
 
-  import 'codemirror/codemirror.css!';
+  import 'codemirror/lib/codemirror.css!';
   import 'inlet/inlet.css!';
 
   var path = "scripts/chiasm-ks/";

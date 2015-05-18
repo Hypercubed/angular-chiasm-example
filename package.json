@@ -41,22 +41,27 @@
   "scripts": {
     "test": "grunt test"
   },
+  "map": {
+    "abc": "github:curran/chiasm@0.1.6"
+  },
   "jspm": {
+    "registry": "jspm",
     "directories": {
       "baseURL": "app"
     },
     "configFile": "app/system.config.js",
+    "map": {
+      "abc": "github:curran/chiasm@0.1.6"
+    },
     "dependencies": {
       "angular": "github:angular/bower-angular@1.3.8",
       "angular-animate": "github:angular/bower-angular-animate@1.3.8",
       "angular-route": "github:angular/bower-angular-route@1.3.8",
       "async": "github:caolan/async@^0.9.2",
       "bootstrap": "github:twbs/bootstrap@^3.3.4",
-      "chiasm": "github:curran/chiasm@^0.1.6",
+      "chiasm": "github:curran/chiasm@0.1.6",
       "codemirror": "github:codemirror/codemirror@^5.2.0",
       "css": "github:systemjs/plugin-css@^0.1.10",
-      "curran/chiasm": "github:curran/chiasm@^0.1.6",
-      "curran/model": "github:curran/model@^0.2.1",
       "d3": "github:mbostock/d3@^3.5.5",
       "inlet": "github:enjalot/Inlet@^0.1.1",
       "lodash": "npm:lodash@^3.8.0",
@@ -67,16 +72,13 @@
       "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88"
     },
     "overrides": {
-      "curran/chiasm": {
-        "main": [
-          "src/chiasm"
-        ]
-      },
-      "github:curran/chiasm@0.1.6": {
-        "main": "src/chiasm"
-      },
       "github:enjalot/Inlet@0.1.1": {
         "main": "inlet"
+      },
+      "github:codemirror/codemirror@5.2.0": {
+        "directories": {
+          "lib": "."
+        }
       }
     }
   }
