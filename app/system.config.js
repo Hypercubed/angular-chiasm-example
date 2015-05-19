@@ -14,11 +14,11 @@ System.config({
     "angular-route": "github:angular/bower-angular-route@1.3.8",
     "async": "github:caolan/async@0.9.2",
     "bootstrap": "github:twbs/bootstrap@3.3.4",
-    "chiasm": "github:curran/chiasm@0.1.6",
+    "chiasm": "github:curran/chiasm@gh-pages",
     "codemirror": "github:codemirror/codemirror@5.2.0",
     "css": "github:systemjs/plugin-css@0.1.10",
     "d3": "github:mbostock/d3@3.5.5",
-    "dummyVis": "github:curran/dummyVis@dev",
+    "dummyVis": "github:curran/dummyVis@0.0.1",
     "inlet": "github:enjalot/Inlet@0.1.1",
     "lodash": "npm:lodash@3.8.0",
     "model": "github:curran/model@0.2.2",
@@ -31,10 +31,6 @@ System.config({
       "angular": "github:angular/bower-angular@1.3.8"
     },
     "github:curran/dummyVis@0.0.1": {
-      "d3": "github:mbostock/d3@3.5.5",
-      "model": "github:curran/model@0.2.2"
-    },
-    "github:curran/dummyVis@dev": {
       "d3": "github:mbostock/d3@3.5.5",
       "model": "github:curran/model@0.2.2"
     },
