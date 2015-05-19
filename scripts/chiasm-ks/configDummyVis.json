@@ -1,0 +1,32 @@
+{
+	"layout": {
+		"plugin": "chiasm/plugins/layout",
+		"state": {
+			"layout": {
+				"orientation": "horizontal",
+				"children": [
+					"editor",
+					{
+						"orientation": "vertical",
+						"children": [
+							"dummy1",
+							"dummy2"
+						]
+					}
+				]
+			}
+		}
+	},
+	"editor": {
+		"plugin": "chiasm/plugins/configEditor",
+		"state": {
+			"size": "325px"
+		}
+	},
+	"dummy1": {
+		"plugin": "dummyVis"
+	},
+	"dummy2": {
+		"plugin": "dummyVis"
+	}
+}

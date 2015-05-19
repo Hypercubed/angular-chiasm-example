@@ -5,17 +5,6 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css" />
-    <link rel="stylesheet" href="bower_components/Inlet/inlet.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -72,14 +61,12 @@
        ga('send', 'pageview');
     </script>
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <script src="bower_components/requirejs/require.js"></script>
-    <!-- endbuild -->
+    <script src="jspm_packages/system.js"></script>
+    <script src="system.config.js"></script>
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="config.js"></script>
-        <script src="scripts/app.js"></script>
-        <!-- endbuild -->
+    <script>
+      System.import('scripts/app');
+    </script>
 
 </body>
 </html>
