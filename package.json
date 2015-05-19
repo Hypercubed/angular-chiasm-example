@@ -63,6 +63,7 @@
       "codemirror": "github:codemirror/codemirror@^5.2.0",
       "css": "github:systemjs/plugin-css@^0.1.10",
       "d3": "github:mbostock/d3@^3.5.5",
+      "dummyVis": "github:curran/dummyVis@^0.0.1",
       "inlet": "github:enjalot/Inlet@^0.1.1",
       "lodash": "npm:lodash@^3.8.0",
       "model": "github:curran/model@^0.2.1"

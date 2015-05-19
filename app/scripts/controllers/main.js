@@ -21,9 +21,10 @@
 
       var main = this;
 
-      main.configName = 'configBarChart';
+      main.configName = 'configDummyVis';
 
       main.data = [
+        { name: 'configDummyVis', label: 'Dummy Vis' },
         { name: 'configBarChart', label: 'Bar Chart' },
         { name: 'configLineChart', label: 'Line Chart' },
         { name: 'configBarLineEditor', label: 'Bar Chart and Line Chart With Editor' },

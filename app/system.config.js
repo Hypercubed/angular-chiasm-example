@@ -18,9 +18,10 @@ System.config({
     "codemirror": "github:codemirror/codemirror@5.2.0",
     "css": "github:systemjs/plugin-css@0.1.10",
     "d3": "github:mbostock/d3@3.5.5",
+    "dummyVis": "github:curran/dummyVis@dev",
     "inlet": "github:enjalot/Inlet@0.1.1",
     "lodash": "npm:lodash@3.8.0",
-    "model": "github:curran/model@0.2.1",
+    "model": "github:curran/model@0.2.2",
     "traceur": "github:jmcriffey/bower-traceur@0.0.88",
     "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88",
     "github:angular/bower-angular-animate@1.3.8": {
@@ -28,6 +29,14 @@ System.config({
     },
     "github:angular/bower-angular-route@1.3.8": {
       "angular": "github:angular/bower-angular@1.3.8"
+    },
+    "github:curran/dummyVis@0.0.1": {
+      "d3": "github:mbostock/d3@3.5.5",
+      "model": "github:curran/model@0.2.2"
+    },
+    "github:curran/dummyVis@dev": {
+      "d3": "github:mbostock/d3@3.5.5",
+      "model": "github:curran/model@0.2.2"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
