@@ -16,6 +16,7 @@ System.config({
     "bootstrap": "github:twbs/bootstrap@3.3.4",
     "chiasm": "github:curran/chiasm@gh-pages",
     "codemirror": "github:codemirror/codemirror@5.2.0",
+    "crossfilter": "github:square/crossfilter@1.3.11",
     "css": "github:systemjs/plugin-css@0.1.10",
     "d3": "github:mbostock/d3@3.5.5",
     "dummyVis": "github:curran/dummyVis@0.0.1",
