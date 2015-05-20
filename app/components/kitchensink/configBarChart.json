@@ -28,7 +28,7 @@
   "barChartCSVLoader": {
     "plugin": "chiasm/plugins/csvLoader",
     "state": {
-      "csvPath": "scripts/chiasm-ks/simpleBars.csv",
+      "csvPath": "components/kitchensink/simpleBars.csv",
       "numericColumns": [
         "frequency"
       ]

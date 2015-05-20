@@ -41,8 +41,7 @@
       "colorDefault": "#009e73",
       "title": "Hello",
       "titleOffset": -0.269568,
-      "yDomainMin": 0,
-      "size": 3
+      "yDomainMin": 0
     }
   },
   "lineChart": {
@@ -68,7 +67,7 @@
   "barChartCSVLoader": {
     "plugin": "chiasm/plugins/csvLoader",
     "state": {
-      "csvPath": "scripts/chiasm-ks/simpleBars.csv",
+      "csvPath": "components/kitchensink/simpleBars.csv",
       "numericColumns": [
         "frequency"
       ]
@@ -77,7 +76,7 @@
   "lineChartCSVLoader": {
     "plugin": "chiasm/plugins/csvLoader",
     "state": {
-      "csvPath": "scripts/chiasm-ks/simpleTime.csv",
+      "csvPath": "components/kitchensink/simpleTime.csv",
       "numericColumns": [
         "temperature"
       ],

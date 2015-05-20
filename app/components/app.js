@@ -3,12 +3,12 @@
 /* require(['angular','scripts/controllers/main','angular-route'], function(angular,main) { */
 
   import angular from 'angular';
-  import main from 'scripts/controllers/main';
+  import main from 'components/kitchensink/kitchensink-controller';
 
   import 'bootstrap';
   import 'bootstrap/css/bootstrap.css!';
 
-  import 'styles/main.css!';
+  import './app.css!';
 
   import 'angular-route';
 
@@ -27,7 +27,7 @@
     .config(['$routeProvider', function ($routeProvider) {
       $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'components/kitchensink/kitchensink.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })

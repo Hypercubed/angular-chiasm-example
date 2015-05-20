@@ -22,8 +22,22 @@
     "state": {
       "xColumn": "sepal_length",
       "xAxisLabel": "Sepal Length",
-      "yColumn": "sepal_width",
-      "yAxisLabel": "Sepal Width",
+      "yColumn": "petal_length",
+      "yAxisLabel": "Petal Width",
+      "colorColumn": "class",
+      "colorDomain": [
+        "Iris-setosa",
+        "Iris-versicolor",
+        "Iris-virginica"
+      ],
+      "colorRange": [
+        "#f66464",
+        "#02e837",
+        "#00a6f9"
+      ],
+      "sizeColumn": "petal_length",
+      "sizeMin": 4,
+      "sizeMax": 22,
       "margin": {
         "top": 32,
         "right": 2,
@@ -34,14 +48,13 @@
       "yAxisLabelOffset": 1.4,
       "title": "Iris",
       "titleOffset": -0.269568,
-      "sizeDefault": 12,
-      "colorDefault": "#d16100"
+      "sizeDefault": 12
     }
   },
   "barChartCSVLoader": {
     "plugin": "chiasm/plugins/csvLoader",
     "state": {
-      "csvPath": "scripts/chiasm-ks/simpleBars.csv",
+      "csvPath": "components/kitchensink/simpleBars.csv",
       "numericColumns": [
         "frequency"
       ]
@@ -50,7 +63,7 @@
   "iris": {
     "plugin": "chiasm/plugins/csvLoader",
     "state": {
-      "csvPath": "scripts/chiasm-ks/iris.csv",
+      "csvPath": "components/kitchensink/iris.csv",
       "numericColumns": [
         "sepal_length",
         "sepal_width",

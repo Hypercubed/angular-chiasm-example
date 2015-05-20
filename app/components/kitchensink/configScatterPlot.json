@@ -24,17 +24,6 @@
       "xAxisLabel": "Sepal Length",
       "yColumn": "sepal_width",
       "yAxisLabel": "Sepal Width",
-      "colorColumn": "class",
-      "colorDomain": [
-        "Iris-setosa",
-        "Iris-versicolor",
-        "Iris-virginica"
-      ],
-      "colorRange": [
-        "#f66464",
-        "#02e837",
-        "#00a6f9"
-      ],
       "margin": {
         "top": 32,
         "right": 2,
@@ -44,14 +33,13 @@
       "xAxisLabelOffset": 1.9,
       "yAxisLabelOffset": 1.4,
       "title": "Iris",
-      "titleOffset": -0.269568,
-      "sizeDefault": 12
+      "titleOffset": -0.269568
     }
   },
   "barChartCSVLoader": {
     "plugin": "chiasm/plugins/csvLoader",
     "state": {
-      "csvPath": "scripts/chiasm-ks/simpleBars.csv",
+      "csvPath": "components/kitchensink/simpleBars.csv",
       "numericColumns": [
         "frequency"
       ]
@@ -60,7 +48,7 @@
   "iris": {
     "plugin": "chiasm/plugins/csvLoader",
     "state": {
-      "csvPath": "scripts/chiasm-ks/iris.csv",
+      "csvPath": "components/kitchensink/iris.csv",
       "numericColumns": [
         "sepal_length",
         "sepal_width",

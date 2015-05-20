@@ -20,10 +20,10 @@
   "scatterPlot": {
     "plugin": "chiasm/plugins/scatterPlot",
     "state": {
-      "xColumn": "sepal_length",
-      "xAxisLabel": "Sepal Length",
+      "xColumn": "petal_width",
+      "xAxisLabel": "Petal Width",
       "yColumn": "petal_length",
-      "yAxisLabel": "Petal Width",
+      "yAxisLabel": "Petal Length",
       "colorColumn": "class",
       "colorDomain": [
         "Iris-setosa",
@@ -37,7 +37,7 @@
       ],
       "sizeColumn": "petal_length",
       "sizeMin": 4,
-      "sizeMax": 22,
+      "sizeMax": 14,
       "margin": {
         "top": 32,
         "right": 2,
@@ -54,7 +54,7 @@
   "barChartCSVLoader": {
     "plugin": "chiasm/plugins/csvLoader",
     "state": {
-      "csvPath": "scripts/chiasm-ks/simpleBars.csv",
+      "csvPath": "components/kitchensink/simpleBars.csv",
       "numericColumns": [
         "frequency"
       ]
@@ -63,7 +63,7 @@
   "iris": {
     "plugin": "chiasm/plugins/csvLoader",
     "state": {
-      "csvPath": "scripts/chiasm-ks/iris.csv",
+      "csvPath": "components/kitchensink/iris.csv",
       "numericColumns": [
         "sepal_length",
         "sepal_width",

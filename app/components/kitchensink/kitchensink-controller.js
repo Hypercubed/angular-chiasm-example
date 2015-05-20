@@ -9,10 +9,9 @@
 
   import 'codemirror/lib/codemirror.css!';
   import 'inlet/inlet.css!';
+  import './axes.css!';
 
-  var path = "scripts/chiasm-ks/";
-
-  //import 'scripts/chiasm-ks/axes.css!';
+  var path = "components/kitchensink/";
 
   export default angular.module('main',[])
     .controller('MainCtrl', ['$http', function ($http) {

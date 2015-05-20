@@ -7,10 +7,11 @@ builder.loadConfig('./dist/system.config.js')
 .then(function() {
 	// additional config can also be set through `builder.config`
 	builder.config({
-		baseURL: 'file:' + path.resolve('./app/')
+		baseURL: 'file:' + path.resolve('./app/'),
+		"packages": "jspm_packages"
 	});
 
-	return builder.build('scripts/app + dummyVis + chiasm/plugins/*', 'dist/scripts/bundle.js', {
+	return builder.build('components/app + dummyVis + chiasm/plugins/*', 'dist/components/bundle.js', {
 	//return builder.build('scripts/app - chiasm + model + lodash + d3 + inlet', 'dist/scripts/bundle.js', {
 		minify: true,
 		sourceMaps: true,

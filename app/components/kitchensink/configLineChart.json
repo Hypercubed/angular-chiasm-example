@@ -28,7 +28,7 @@
   "lineChartCSVLoader": {
     "plugin": "chiasm/plugins/csvLoader",
     "state": {
-      "csvPath": "scripts/chiasm-ks/simpleTime.csv",
+      "csvPath": "components/kitchensink/simpleTime.csv",
       "numericColumns": [
         "temperature"
       ],
