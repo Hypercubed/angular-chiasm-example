@@ -15,7 +15,7 @@
   //import 'scripts/chiasm-ks/axes.css!';
 
   export default angular.module('main',[])
-    .controller('MainCtrl', function ($http) {
+    .controller('MainCtrl', ['$http', function ($http) {
 
       var chiasm = Chiasm(document.getElementById("container"));
 
@@ -49,6 +49,6 @@
 
       main.getConfig(main.configName);
 
-    });
+    }]);
 
 //});

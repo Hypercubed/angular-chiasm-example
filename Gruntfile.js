@@ -341,9 +341,9 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
-            'config.js',
-            'scripts/{,*/}*.*',  // temp solution
-            'styles/{,*/}*.*',  // temp solution
+            '*.js',
+            'scripts/chiasm-ks/*.*',  // temp solution
+            //'styles/{,*/}*.*',  // temp solution
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
             //'styles/fonts/{,*/}*.*'
@@ -355,8 +355,11 @@ module.exports = function (grunt) {
           src: ['generated/*']
         }, {
           expand: true,
-          cwd: '.',
-          src: 'bower_components/**/*.{js,css,map}',    // temp solution
+          cwd: '<%= yeoman.app %>',
+          src: [
+            'jspm_packages/*.{js,map}',    // sysetm loader and maps
+            //'jspm_packages/github/{curran,codemirror}/**/*.{js,css,map}',    // temp solution
+          ],
           dest: '<%= yeoman.dist %>'
         }]
       },
@@ -391,20 +394,17 @@ module.exports = function (grunt) {
       }
     },
 
-    /* bowerRequirejs: {
-      target: {
-        rjsConfig: 'app/config.js',
-        options: {
-          transitive: true
-        }
-      }
-    }, */
-
     'gh-pages': {
       options: {
         base: 'dist'
       },
       src: ['**']
+    },
+
+    execute: {
+      builder: {
+        src: ['build.js']
+      }
     }
   });
 
@@ -439,7 +439,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'wiredep',
+    //'wiredep',
     //'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
@@ -451,7 +451,8 @@ module.exports = function (grunt) {
     //'uglify',
     //'filerev',
     //'usemin',
-    //'htmlmin'
+    //'htmlmin',
+    'execute:builder'
   ]);
 
   grunt.registerTask('default', [

@@ -24,7 +24,7 @@
       //'ngTouch'
       main.name
     ])
-    .config(function ($routeProvider) {
+    .config(['$routeProvider', function ($routeProvider) {
       $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -38,7 +38,7 @@
       .otherwise({
         redirectTo: '/'
       });
-    });
+    }]);
 
   //require('controllers/main.js');
 
